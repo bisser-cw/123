@@ -4,20 +4,20 @@ while [ 1 ]
 do
   initialVolume=`osascript -e 'set currentVolume to output volume of (get volume settings)'`
   osascript -e 'set volume output volume 70'
-  say "Tadaaa We're no strangers to love"
-  say "You know the rules and so do I"
-  say "A full commitment's what I'm thinking of"
-  say "You wouldn't get this from any other guy"
+  say "Tadaaa We're no strangers to love" -v Karen
+  say "You know the rules and so do I" -v Karen
+  say "A full commitment's what I'm thinking of" -v Karen
+  say "You wouldn't get this from any other guy" -v Karen
 
-  say "I just wanna tell you how I'm feeling"
-  say "Gotta make you understand"
+  say "I just wanna tell you how I'm feeling" -v Karen
+  say "Gotta make you understand" -v Karen
 
-  say "Never gonna give you up"
-  say "Never gonna let you down"
+  say "Never gonna give you up" -v Karen
+  say "Never gonna let you down" -v Karen
 
   sleep 2
-  osascript -e 'set volume output volume 95'
-  say "Don't forget to lock your computer next time!"
+  osascript -e 'set volume output volume 80'
+  say "Don't forget to lock your computer next time!" -v Karen
   osascript -e "set volume output volume \"$initialVolume\""
   sleep 10
 done
