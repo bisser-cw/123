@@ -17,7 +17,7 @@ do
 
   sleep 2
   osascript -e 'set volume output volume 80'
-  say "Don't forget to lock your computer next time!" -v Karen
+  say "Don't forget to lock your computer next time!" -v Alex
   osascript -e "set volume output volume \"$initialVolume\""
   sleep 10
 done
