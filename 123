@@ -1,0 +1,23 @@
+#!/bin/bash
+
+while [ 1 ]
+do
+  initialVolume=`osascript -e 'set currentVolume to output volume of (get volume settings)'`
+  osascript -e 'set volume output volume 70'
+  say "Tadaaa We're no strangers to love"
+  say "You know the rules and so do I"
+  say "A full commitment's what I'm thinking of"
+  say "You wouldn't get this from any other guy"
+
+  say "I just wanna tell you how I'm feeling"
+  say "Gotta make you understand"
+
+  say "Never gonna give you up"
+  say "Never gonna let you down"
+
+  sleep 2
+  osascript -e 'set volume output volume 95'
+  say "Don't forget to lock your computer next time!"
+  osascript -e "set volume output volume \"$initialVolume\""
+  sleep 10
+done
